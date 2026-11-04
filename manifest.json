@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Eraser",
+  "version": "1.0.0",
+  "description": "Heuristically masks posts with AI-style text or media hints.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.x.com/*",
+        "*://*.twitter.com/*",
+        "*://*.facebook.com/*",
+        "*://*.instagram.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.reddit.com/*",
+        "*://*.youtube.com/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "AI Eraser"
+  }
+}
