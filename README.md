@@ -1,0 +1,2 @@
+# Ai-Eraser-
+Block ai
