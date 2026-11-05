@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Eraser</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>AI Eraser</h1>
+    <label class="toggle">
+      <input id="auto-hide" type="checkbox">
+      <span>Automatically hide strong matches</span>
+    </label>
+    <p class="note">Only explicit AI disclosures trigger a flag. Detection is imperfect; your corrections are stored locally.</p>
+
+    <section aria-labelledby="feedback-title">
+      <h2 id="feedback-title">Your feedback</h2>
+      <p>Shown as not AI: <strong id="false-positive-count">0</strong></p>
+      <p>Confirmed as AI: <strong id="confirmed-count">0</strong></p>
+      <div id="rule-stats"></div>
+    </section>
+
+    <div class="actions">
+      <button id="export-feedback" type="button">Export feedback</button>
+      <button id="clear-feedback" type="button">Clear feedback</button>
+    </div>
+
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
