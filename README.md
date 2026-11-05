@@ -35,18 +35,12 @@ This extension is intentionally not aggressive. It only looks for explicit AI di
 
 ## Feedback and tuning
 
-The popup exposes a small local feedback panel that records:
-
-- false positives
-- confirmed AI hits
-- rule-level counts by match type
-
-These counts are stored locally in the browser and can be exported or cleared from the popup.
+The popup exposes a small local feedback panel that records false positives, confirmed AI hits, and rule-level counts by match type. These counts are stored locally in the browser and can be exported or cleared from the popup. Feedback does not upload or automatically retrain/change detection rules.
 
 ## Files
 
 - `manifest.json` — extension metadata and popup wiring
-- `content-script.js` — post detection and UI/hiding logic
+- `content-script.js` — post detection, reason panel, controls, and local feedback
 - `popup.html` — popup UI
 - `popup.js` — settings and feedback logic
 - `popup.css` — popup styling
