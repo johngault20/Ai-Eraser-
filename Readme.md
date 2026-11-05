@@ -48,3 +48,4 @@ The popup exposes a small local feedback panel that records false positives, con
 ## Limitation
 
 This is not a reliable AI detector. It is a conservative disclosure-based helper that reduces noisy blocking and gives users final control.
+
