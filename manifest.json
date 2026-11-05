@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "AI Eraser",
-  "version": "1.0.0",
-  "description": "Heuristically masks posts with AI-style text or media hints.",
+  "version": "1.1.0",
+  "description": "Conservatively flags posts with explicit AI disclosures and lets you correct the results.",
+  "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": [
@@ -19,6 +20,7 @@
     }
   ],
   "action": {
-    "default_title": "AI Eraser"
+    "default_title": "AI Eraser feedback",
+    "default_popup": "popup.html"
   }
 }
